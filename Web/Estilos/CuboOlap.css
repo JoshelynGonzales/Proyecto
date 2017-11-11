@@ -1,0 +1,401 @@
+﻿*
+{
+	font-family: Verdana, Arial, "Times New Roman";
+	font-size: 10px;
+	/*text-decoration: underline overline line-through;*/
+}
+
+div#divContenedor
+{
+	/*height: 500px;
+	border: solid 1px #000000;*/
+}
+
+div#divContenedor table.Cubo
+{
+	/*border: solid 1px #000000;*/
+	border-collapse: collapse;
+	border: solid 1px #000000;
+	clear: both;
+	margin-top: 5px;
+}
+
+div#divContenedor table.Cubo tr td
+{
+	height: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+div#divContenedor table.Cubo tr td a,
+div#divContenedor table.Cubo tr td a:hover
+{
+	text-decoration: none;
+	margin-right: 4px;
+}
+
+div#divContenedor table.Cubo tr td a img
+{
+	vertical-align: middle;
+	border-width: 0px;
+}
+
+div#divContenedor table.Cubo tr td.EsqSupIzq
+{
+	background-color: #FFFFFF;
+	border-top: solid 1px #FFFFFF;
+	border-left: solid 1px #FFFFFF;
+	border-right: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumna
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumna_0
+{
+	background-color: #336699;
+	border-top: solid 1px #000000;
+	border-right: solid 1px #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumna_1
+{
+	background-color: #77AADD;
+	border-top: solid 1px #000000;
+	border-right: solid 1px #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumna_2,
+div#divContenedor table.Cubo tr td.TituloDimensionColumna_3,
+div#divContenedor table.Cubo tr td.TituloDimensionColumna_4,
+div#divContenedor table.Cubo tr td.TituloDimensionColumna_5
+{
+	/*background-color: #99CCFF;*/
+	background-color: #DEDEDE;
+	border-top: solid 1px #000000;
+	border-right: solid 1px #000000;
+	/*border-bottom: solid 1px #000000;*/
+	color: #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumnaTotal
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumnaTotal_1
+{
+	background-color: #336699;
+	border-left: solid 1px #000000;
+	border-right: solid 1px #000000;
+	color: #336699;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumnaTotal_2
+{
+	background-color: #77AADD;
+	border-left: solid 1px #000000;
+	border-right: solid 1px #000000;
+	color: #77AADD;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionColumnaTotal_3,
+div#divContenedor table.Cubo tr td.TituloDimensionColumnaTotal_4,
+div#divContenedor table.Cubo tr td.TituloDimensionColumnaTotal_5
+{
+	background-color: #DEDEDE;
+	border-left: solid 1px #000000;
+	border-right: solid 1px #000000;
+	color: #DEDEDE;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFila
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 3px;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFila_0
+{
+	background-color: #336699;
+	border-bottom: solid 1px #000000;
+	border-left: solid 1px #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFila_1
+{
+	background-color: #77AADD;
+	border-bottom: solid 1px #000000;
+	border-left: solid 1px #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFila_2,
+div#divContenedor table.Cubo tr td.TituloDimensionFila_3,
+div#divContenedor table.Cubo tr td.TituloDimensionFila_4,
+div#divContenedor table.Cubo tr td.TituloDimensionFila_5
+{
+	/*background-color: #99CCFF;*/
+	background-color: #DEDEDE;
+	border-bottom: solid 1px #000000;
+	border-left: solid 1px #000000;
+	/*border-right: solid 1px #000000;*/
+	color: #000000;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFilaTotal
+{
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFilaTotal_1
+{
+	background-color: #336699;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	color: #336699;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFilaTotal_2
+{
+	background-color: #77AADD;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	color: #77AADD;
+}
+
+div#divContenedor table.Cubo tr td.TituloDimensionFilaTotal_3,
+div#divContenedor table.Cubo tr td.TituloDimensionFilaTotal_4,
+div#divContenedor table.Cubo tr td.TituloDimensionFilaTotal_5
+{
+	background-color: #DEDEDE;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	color: #DEDEDE;
+}
+
+div#divContenedor table.Cubo tr td.Medida
+{
+	text-align: right;
+	border-bottom: solid 1px #000000;
+	border-right: solid 1px #000000;
+	border-left: solid 1px #000000;
+	border-top: solid 1px #000000;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotalColumnas
+{
+	text-align: right;
+	/*border-right: solid 1px #000000;
+	border-top: dotted 1px #000000;*/
+	border: solid 1px #000000;
+	font-weight: bold;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotalFilas
+{
+	text-align: right;
+	/*border-bottom: solid 1px #000000;
+	border-left: dotted 1px #000000;*/
+	border: solid 1px #000000;
+	font-weight: bold;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_1
+{
+	background-color: #336699;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_2
+{
+	background-color: #77AADD;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_3,
+div#divContenedor table.Cubo tr td.MedidaTotal_4,
+div#divContenedor table.Cubo tr td.MedidaTotal_5
+{
+	background-color: #DEDEDE;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal__1
+{
+	background-color: #336699;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal__2
+{
+	background-color: #77AADD;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal__3,
+div#divContenedor table.Cubo tr td.MedidaTotal__4,
+div#divContenedor table.Cubo tr td.MedidaTotal__5
+{
+	background-color: #DEDEDE;
+}
+
+
+
+
+
+div#divContenedor table.Cubo tr td.MedidaTotalFilasColumnas
+{
+	text-align: right;
+	/*border-bottom: solid 1px #000000;
+	border-left: dotted 1px #000000;*/
+	border: solid 1px #000000;
+	font-weight: bold;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_1_1
+{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_1_2,
+div#divContenedor table.Cubo tr td.MedidaTotal_1_3,
+div#divContenedor table.Cubo tr td.MedidaTotal_1_4,
+div#divContenedor table.Cubo tr td.MedidaTotal_1_5
+{
+	background-color: #002346;
+	color: #BBBBBB;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_2_1
+{
+	background-color: #002346;
+	color: #BBBBBB;
+}
+
+div#divContenedor table.Cubo tr td.MedidaTotal_2_2,
+div#divContenedor table.Cubo tr td.MedidaTotal_2_3,
+div#divContenedor table.Cubo tr td.MedidaTotal_2_4,
+div#divContenedor table.Cubo tr td.MedidaTotal_2_5
+{
+	background-color: #77AADD;
+}
+
+
+
+
+/*
+div.divBotonera
+{
+	background-color: #FFFFFF;
+	border: solid 1px #000000;
+	position: absolute;
+	display: none;
+}
+*/
+
+
+
+
+
+div.divContenedorFiltro
+{
+	clear: none;
+	float: left;
+	margin: 1px;
+}
+
+
+div#divContenedorFiltroFilas
+{
+	/*background-color: #CDCDCD;*/
+}
+div#divContenedorFiltroColumnas
+{
+	/*background-color: #CDCDCD;*/
+}
+div.divContenedorFiltroBoton
+{
+}
+
+div.divFiltro
+{
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	border: solid 5px #DFDFDF;
+	width: 150px;
+}
+
+div.divFiltroDropDown
+{
+	border: solid 1px #000000;
+	background-color: #FFFFFF;
+	/*float: left;*/
+	position: absolute;
+	padding: 2px;
+	margin: 2px;
+	display: none;
+}
+
+div.divFiltroDropDown_Lista
+{
+	height: 120px;
+	width: 150px;
+	overflow: auto;
+}
+
+div.divFiltroDropDownCerrar
+{
+	text-align: right;
+}
+
+div.divContenedorFiltro a img
+{
+	border: 0px;
+	margin-top: 3px;
+}
+
+div.divFiltros
+{
+	display: none;
+	position: absolute;
+	background-color: #FFFFFF;
+	border: solid 1px #000000;
+	padding: 10px;
+}
+
+div.divFiltros fieldset
+{
+	border: solid 0px #000000;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+div.divContenedorUbicacion
+{
+	border: solid 1px #000000;
+	background-color: #FFFFFF;
+	float: left;
+	position: absolute;
+	padding: 2px;
+	margin: 2px;
+	display: none;
+}
+
+table.tableHerramientas
+{
+}
+
+table.tableHerramientas tr td
+{
+	vertical-align: top;
+}

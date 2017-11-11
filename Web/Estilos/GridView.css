@@ -1,0 +1,47 @@
+﻿grid
+{
+	table-layout:fixed;
+}
+
+tr.GridView_Header_Row
+{
+	background: #507CD1;
+	font: bold 12px;
+	color: #FFFFFF;
+}
+tr.GridView_Header_Row td.Header, tr.GridView_Header_Row th
+{
+	border-left-color: #FFF;
+	border-left-width: 1px;
+	border-right-color: #FFF;
+	border: 1px solid #FFF; /*#bbbbbb;*/
+}
+tr.GridView_Header_Row a, tr.GridView_Header_Row span
+{
+	font: bold 12px;
+	color: #FFFFFF;
+}
+tr.GridView_Row
+{
+	background: #EFF3FB;
+}
+tr.GridView_Row td
+{
+	border: 1px solid #FFF; /*#bbbbbb;*/
+}
+tr.GridView_Alternating_Row
+{
+	background: #FFF;
+}
+tr.GridView_Alternating_Row td
+{
+	border: 1px solid #FFF; /*#bbbbbb;*/
+}
+tr.GridView_Row:hover, tr.GridView_Alternating_Row:hover
+{
+	background: #DBE7F6;
+}
+tr.GridView_Row_Res, tr.GridView_Row_Res:hover
+{
+	background: #CCC;
+}

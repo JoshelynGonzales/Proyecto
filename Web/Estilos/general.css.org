@@ -1,0 +1,643 @@
+@import url(GridView.css);
+@import url(tab.css);
+
+*
+{
+    font-family: Arial;
+    SCROLLBAR-FACE-COLOR:#507CD1;
+	SCROLLBAR-HIGHLIGHT-COLOR: #6699CC;
+	SCROLLBAR-SHADOW-COLOR: #6699CC;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR: #EFF3FB;
+	SCROLLBAR-DARKSHADOW-COLOR: #000000;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	color: #21658A;
+	/*color: #507CD1;*/
+	font-size: 11px;
+}
+
+legend
+{
+		color: #21658A;
+}
+
+/* Estilo de los bordes */
+td.borde_a_izq, td.borde_b_izq {
+	background-image: url(../imagenes/borde.png);
+	background-repeat:  repeat-y;
+	background-position: left;
+	width: 5px;
+}
+td.borde_a_der, td.borde_b_der {
+	background-image: url(../imagenes/borde.png);
+	background-repeat:  repeat-y;
+	background-position: right;
+	width: 5px;
+}
+td.borde_a_inf, td.borde_b_inf {
+	background-image: url(../imagenes/borde.png);
+	background-repeat:  repeat-x;
+	background-position: bottom;
+	height: 5px;
+}
+td.borde_a_sup, td.borde_b_sup {
+	background-image: url(../imagenes/borde.png);
+	background-repeat:   repeat-x;
+	background-position: top;
+	height: 5px;
+}
+
+/*Estilo de esquinas a */
+td.esquina_a_sup_izq, td.esquina_a_sup_der, td.esquina_a_inf_izq, td.esquina_a_inf_der {
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+td.esquina_a_sup_izq{
+	background-image:url(../imagenes/esquina_a_sup_izq.png);
+}
+td.esquina_a_sup_der{
+	background-image:url(../imagenes/esquina_a_sup_der.png);
+}
+td.esquina_a_inf_izq{
+	background-image:url(../imagenes/esquina_a_inf_izq.png);
+}
+td.esquina_a_inf_der{
+	background-image:url(../imagenes/esquina_a_inf_der.png);
+}
+
+/*Estilo de esquinas b */
+td.ezquina_b_sup_izq, td.esquina_b_sup_der, td.esquina_b_inf_izq, td.esquina_b_inf_der {
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 5px;
+}
+td.esquina_b_sup_izq{
+	background-image:url(../imagenes/esquina_b_sup_izq.png);
+}
+td.esquina_b_sup_der{
+	background-image:url(../imagenes/esquina_b_sup_der.png);
+}
+td.esquina_b_inf_izq{
+	background-image:url(../imagenes/esquina_b_inf_izq.png);
+}
+td.esquina_b_inf_der{
+	background-image:url(../imagenes/esquina_b_inf_der.png);
+}
+
+/* Estilo del cuerpo en b */
+td.borde_b_izq, td.borde_b_der, td.borde_b_sup, td.borde_b_inf, td.celda_b {
+	background-color: #FBFBFB;
+}
+.tabla {
+	border: thin solid #E0DDD9;
+}
+
+/* Estilo de input */
+.TextUpperLowerCase
+{
+	text-transform:none;	
+}
+select.NoStyle option
+{
+	text-transform:none;
+}
+input.noStyle
+{
+	background: #FFF;
+	border-color: #FFF;
+	color: #FFF;
+}
+select
+{
+	font-size: 11px;
+}
+
+/*******************************/
+input[type=text], input[type=password], textarea, option
+{
+	border: solid 1px /*#EFF3FB*/ #21658A;
+	background-color: #FFF;
+	text-transform: uppercase;
+	color: #21658A;
+	font-size: 11px;
+}
+input.Focus, textarea.Focus, option.Focus, select.Focus
+{
+	border: solid 1px #507CD1;
+	background-color: #EFF3FB;
+	color: #000;
+}
+/********************************/
+input[type=button], input[type=submit]
+{
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+input.Grabar, input.Aceptar, input.Cancelar, input.Agregar, input.Nuevo, input.Salir, input.Actualizar, input.Seleccionar,input.Reordenar, input.Copiar_de, input.Copiar_a, input.Buscar,input.BorrarFiltro,input.Formula,input.Calcular,input.AddPerson,input.GenerarCuotas,input.Importar,input.Consolidar,input.VistaPrevia,input.Reprogramar,input.InsertFirstRow,input.GenerateZIP
+{
+	background-repeat:no-repeat;
+	/*background-position:-10;*/
+	width:89px;
+	/*width: 22px;*/
+    height:22px;
+    background-color:#FFFFFF;
+    border-width:0px;
+   /*border-color:#999999;*/
+    color:#21658A;
+    font-family:Arial;
+    text-align:left;
+}
+input.Actualizar
+{
+    background-image:url(../Imagenes/btn_actualizar.png);
+    width: 94px;
+}
+input.Grabar
+{
+	background-image:url(../Imagenes/btn_guardar.png);
+	width: 89px;
+}
+input.Buscar
+{
+	background-image:url(../Imagenes/btn_buscar.png);
+	width: 84px;
+}
+input.BorrarFiltro
+{
+	background-image:url(../Imagenes/btn_limpiar_filtro.png);
+	width: 66px;
+}
+input.Formula
+{
+	background-image:url(../Imagenes/btn_formula.png);
+	width: 66px;
+}
+input.Reprogramar
+{
+	background-image:url(../Imagenes/btn_reprogramar.png);
+}
+input.GenerateZIP
+{
+	background-image:url(../Imagenes/btn_generateZIP.png);
+}
+input.Aceptar
+{
+	background-image:url(../Imagenes/btn_aceptar.png);
+	width: 89px;
+}
+input.Calcular
+{
+	background-image:url(../Imagenes/btn_calcular.png);
+	width: 89px;
+}
+input.Cancelar
+{
+	background-image:url(../Imagenes/btn_cancelar.png);
+	width: 89px;
+}
+input.AddPerson
+{
+	background-image:url(../Imagenes/btn_add_person.png);	
+}
+input.InsertFirstRow
+{
+	background-image:url(../Imagenes/btn_insert_first_row.png);	
+}
+input.Consolidar
+{
+	background-image:url(../Imagenes/btn_consolidar.png);	
+	padding-left:5px;
+}
+input.VistaPrevia
+{
+	background-image:url(../Imagenes/btn_vista_previa.png);	
+	
+}
+input.Importar
+{
+	background-image:url(../Imagenes/btn_importar.png);	
+}
+input.GenerarCuotas
+{
+	background-image:url(../Imagenes/btn_generar_cuotas.png);	
+}
+input.Agregar
+{
+	background-image:url(../Imagenes/btn_agregar.png);	
+}
+input.Seleccionar
+{
+	background-image:url(../Imagenes/btn_seleccionar.png);	
+	width:104px;
+}
+input.Nuevo
+{
+	background-image:url(../Imagenes/btn_nuevo.png);
+}
+input.Salir
+{
+	background-image:url(../Imagenes/btn_salir.png);	
+	font-size:13px;
+	padding-left:15px;
+}
+
+input.Reordenar
+{
+	background-image:url(../Imagenes/btn_reordenar.png);	
+	font-size:13px;
+	padding-left:15px;
+	width: 138px;
+}
+input.Copiar_a
+{
+	background-image: url(../Imagenes/btn_copiar_a.png);
+	padding-left: 10px;
+	width: 97px;
+}
+input.Copiar_de
+{
+	background-image: url(../Imagenes/btn_copiar_de.png);
+	font-size: 13px;
+	padding-left: 15px;
+	width: 97px;
+}
+
+input.Fecha
+{
+	background-image:url(../Imagenes/calendario.gif);
+	background-color:#ffffff;
+	border:none;
+	background-position:center;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+}
+
+.lnlEliminar
+{
+	background-image:url(../Imagenes/cont_eliminar.png);
+}
+
+div.titulo
+{
+	color: #21658A;
+	top: 10px;
+	left: 70px;
+	position: absolute;
+	font-family: Arial;
+	font-size: 20px;
+}
+cslTituloMant
+{
+	color:#21658A;
+	position:absolute;
+	font-family:Arial;
+	font-size:50px;
+}
+
+error
+{
+	background-image:url(../Imagenes/delete.png);
+}
+.Paginacion
+{
+	background: url(../Imagenes/pag_relativo.png) center no-repeat;
+}
+.Paginacion a
+{
+	color:#21658A;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+}
+.Paginacion a:hover
+{
+	color:#006;
+	font-weight:bold;
+}
+.TextoDerecha
+{
+	text-align:right;
+}
+.txtResaltado
+{
+	background-color: #f1f1f1;	
+	text-transform:uppercase;
+}
+.txtResaltadoRight
+{
+	background-color: #f1f1f1;	
+	text-transform:uppercase;
+	text-align:right;
+}
+
+.selGrid td .selGrid th
+{
+	height:14px;
+	border-right:solid 1px #fff;
+    vertical-align:middle;
+}
+/*
+.selGrid th
+{
+	background-color:#EFEFEF;
+	font-weight:normal;
+	border-color:#ccc;
+}
+*/
+.selGrid td
+{
+    vertical-align:middle;
+    cursor:pointer;
+    border-color:#EFEFEF;
+}
+
+.altrowstyle 
+{
+	background-color:#EFEFEF;}
+
+/* Estilo Grid View */
+
+.cslHeader{
+    background-color:#507CD1;
+    font-weight:bold;
+    height:23px;
+}
+.cslHeader th {
+    border:1px solid #bbbbbb;
+    padding-left:5px;
+    text-align:center;
+} 
+
+.SelectedRow { background-color:#ff0000;color:#fff}
+
+.pagerstyle {font-size:x-small;text-align:right;background:url(../../images/bcktop.gif) repeat-x;
+    background-position: bottom left;}
+
+.irapag{
+    font-size:x-small;
+    width:20px;
+}
+.anterior
+{
+    background:transparent url(../Imagenes/grid_previous.gif) no-repeat scroll center;
+    height:1.3em;
+    width:16px;
+    cursor:pointer;
+}
+.siguiente{
+    background:transparent url(../Imagenes/grid_next.gif) no-repeat scroll center;
+    height:1.3em;
+    width:16px;
+    cursor:pointer;
+}
+.primero{
+    background:transparent url(../Imagenes/grid_first.gif) no-repeat scroll center;
+    height:1.3em;
+    width:16px;
+    cursor:pointer;
+}
+.ultimo{
+    background:transparent url(../Imagenes/grid_last.gif) no-repeat scroll center;
+    height:1.3em;
+    width:16px;
+    cursor:pointer;
+}
+
+/* Estilo de una Ventana modal "Procesando..." */
+
+.modalBackground
+{
+	background-color: Gray;
+	filter: alpha(opacity=50);
+	opacity: 0.50;
+	
+}
+
+.updateProgress
+{
+	border-width: 1px;
+	border-style: solid;
+	background-color: #FFFFFF;
+	position: absolute;
+	width: 180px;
+	height: 65px;
+}
+.divProgress
+{
+      width: 180px; 
+      background-color:  #FFFFAE;
+      height: 32px; 
+      bottom: 0%;
+      left: 0px;
+      position: absolute;
+      border: gray 1px solid;
+      visibility:hidden;      
+      font-size:14px;
+}
+
+.divBlock
+{
+	background-color: #fff;
+	top: 0%; left: 0%;
+	position: absolute;
+	visibility: hidden;
+	filter:alpha(opacity=0);
+	opacity:0;
+}
+
+/*Reorder List*/
+.dragHandle {
+	width:10px;
+	height:15px;
+	background-color:Blue;
+	background-image:url(../Imagenes/bg-menu-main.png);
+	cursor:move;
+	border:outset thin white;
+}
+
+.reorderListDemo li {
+	list-style:none;
+	margin:2px;
+	
+}
+
+.reorderListDemo li a {font-weight:bold;}
+
+.itemArea {
+	margin-left:15px;
+	font-family:Arial, Verdana, sans-serif;
+	font-size:1em;
+	text-align:left;
+}
+
+.reorderCue {
+	border:dashed thin black;
+	width:100%;
+	height:25px;
+}
+
+.callbackStyle {
+	border:thin blue inset;		
+}
+
+/* Rounded Corners*/
+
+.autocomplete_completionListElement 
+{  
+	margin : 0px !important;
+	visibility : visible;
+	/*background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;
+	cursor : 'default';
+	overflow : auto;
+	height : 200px;
+    
+    list-style-type : none;
+    */
+	border-width : 1px;
+	text-align : left; 
+	cursor : 'default';
+    FONT-SIZE: 12px;
+    FONT-WEIGHT:bold;
+    COLOR: #fffacd;
+    background-color: #fffacd;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none;
+	border: #999999 1px solid;
+	padding: 1px;
+	/*
+	overflow : auto;
+	height : 250px;
+	*/
+	/*line-height: 15px;*/
+	text-transform:uppercase;
+}
+
+/* AjaxToolKit DropDown */
+
+.ContextMenuPanel 
+{
+	border: 1px solid #868686;
+	z-index: 1000;
+	background: url(../Imagenes/menu-bg.gif) repeat-y 0 0 #FAFAFA;
+	cursor: default;
+	padding: 1px 1px 0px 1px;
+	font-size: 11px;
+}
+
+.ContextMenuBreak
+{
+	margin:1px 1px 1px 32px;
+	padding:0;
+	height:1px;
+	overflow:hidden;
+	display:block;
+	border-top: 1px solid #C5C5C5;	
+}
+
+a.ContextMenuItem
+{
+	margin: 1px 0 1px 0;
+	display: block;
+	color: #003399;
+	text-decoration: none;
+	cursor: pointer;	
+	padding: 4px 19px 4px 33px;
+	white-space: nowrap;
+}
+
+a.ContextMenuItem-Selected
+{
+	font-weight: bold;
+}
+
+a.ContextMenuItem:hover
+{
+	background-color: #FFE6A0;
+	color: #003399;
+	border: 1px solid #D2B47A;
+	padding: 3px 18px 3px 32px;
+}
+
+
+div.btnUploadImage
+{
+	color: #21658A;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	background: #000;
+	border: solid #F00 1px;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionLink
+{
+	color:White;
+}
+
+/*Cascading DropDown*/
+
+/*CollapsiblePanel*/
+.collapsePanel {
+	
+	background-color:white;
+	overflow:hidden;
+}
+
+.collapsePanelHeader{	
+	width:100%;		
+	height:30px;
+	background-image: url(images/bg-menu-main.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+.modalPopup {
+	background-color:White;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}

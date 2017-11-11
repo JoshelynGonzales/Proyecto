@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Mp_Principal.master.cs" Inherits="Templates_Mp_Principal" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register src="Control/Menu.ascx" tagname="Menu" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>.: Gestión Educativa :.</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />    
+    <script src="Script/jquery.min.js" type="text/javascript"></script>
+    <script src="Script/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="Style/General.css" rel="stylesheet" type="text/css" />
+    <link href="Estilos/general.css" rel="stylesheet" type="text/css" />
+    <script src="Script/Validaciones.js" type="text/javascript"></script>    
+
+    <script src="Script/alerts/jquery.alerts.js" type="text/javascript"></script>
+     <link href="App_Themes/Default/Default.css" rel="stylesheet" type="text/css" />   
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 770px;
+            height: 770px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="false">
+    </asp:ScriptManager>
+    <!-- Inicio Update Pogress -->
+    <asp:UpdateProgress id="upg_Progreso" runat="server" DisplayAfter="1">
+            <ProgressTemplate >                                       
+            <div id="updateProgressTable" style="position:absolute;z-index: 20000;"> 
+                <div id="div_Proc"  style="filter: progid:DxImageTransform.Microsoft.dropshadow(color='#e0e0e0', enabled='true');
+                    width: 250px; height: 90px; position:absolute; z-index: 90000;">
+                        <table style="width:250px; border: #aeaeae 1px solid;" cellpadding="5" cellspacing="0" bgcolor="#ffffff" >
+                            <tr>
+                                <td style="width:90px;height:80px" align="right" valign="middle" >
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/Loading.gif" /></td>
+                                        <td align="left" valign="middle" >
+                                            <asp:Label ID="lbl_Text" CssClass="txt_loading" runat="server" Text="Procesando...">
+                                            </asp:Label>
+                                        </td>
+                            </tr>
+                        </table>
+                </div>
+            </div>                
+            </ProgressTemplate>
+    </asp:UpdateProgress>
+    <!-- Fin Update Pogress -->
+    
+    <div>         
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabla_pagina">           
+          <tr>
+            <td class="contorno_sup_izq"></td>
+            <td class="contorno_sup_rep"></td>
+            <td class="contorno_sup_der"></td>
+          </tr>
+          <tr>
+            <td class="contorno_centro_izq">
+            </td>
+            <td>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tabla_principal">
+              <tr>
+                <td class="cabecera">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="left"></td>
+                        <td style="width: 13px">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/12744700_683097441833360_6629205475293559824_n.jpg" Width="250px" Height="200px" /></td>
+                        <td class="tit_sys"></td>
+                      </tr>
+                    </table>
+                    <uc1:Menu ID="Menu1" runat="server" />
+                </td>
+              </tr>
+              <tr>
+                <td class="menu" style="height: 26px">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="6">
+                      <tr>
+                        <td class="txt_blanco" style="padding-left:05px;">
+                        <span class="menu_sep">.::</span>
+                        <span class="txt_Azul">BIENVENIDO <b/>&nbsp;* Gestión de Alumnos para el programa de &quot; Certificado de Ministerio Laico &quot; *</b></span>
+                        <span class="menu_sep">::.</span>
+			            </td>
+                        <td align="right" class="txt_Azul">                           
+                                        &nbsp;</td>
+                      </tr>
+                    </table>
+                    </td>
+              </tr>
+              <tr>
+                <td style="height: 390px" valign="top" align="left">
+                    <asp:ContentPlaceHolder ID="cph_contenedor" runat ="server">                    
+                    <table width="100%" border="0" cellspacing="0" cellpadding="6">
+                      <tr>
+                        <td class="txt_blanco" style="padding-left:05px;">
+                            
+                      </tr>
+                    </table>
+                        <p>
+                            &nbsp;</p>
+                    </asp:ContentPlaceHolder>                
+                </td>
+              </tr>
+              <tr>
+                <td class="piedepag" style="height: 27px"><span class="txt_loading">©                
+                </td>
+              </tr>
+              <tr>
+                <td class="piedepag" style="height: 27px"><span class="txt_loading">© <%= DateTime.Today.Year.ToString() %>. PROYECTO .</span></td>
+              </tr>
+            </table>
+            </td>
+            <td class="contorno_centro_der">
+            </td>
+          </tr>
+          <tr>
+            <td class="contorno_inf_izq">
+            </td>
+            <td class="contorno_inf_rep">
+            </td>
+            <td class="contorno_inf_der">
+            </td>
+          </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿.tab .ajax__tab_header 
+{
+	font-family: Arial;
+	font-size:11px;
+	background:url("../imagenes/tab/tab-line.png") repeat-x bottom;
+}
+.tab .ajax__tab_outer
+{
+	padding-right:0px;
+	background:url("../imagenes/tab/tab-right.png") no-repeat right;
+	height:21px;
+}
+.tab .ajax__tab_inner 
+{
+	padding-left:4px;
+	background:url("../imagenes/tab/tab-left.png") no-repeat left;
+}
+.tab .ajax__tab_tab
+{
+	color: #21658A;
+	font-weight: bold;
+	font-size:11px;
+	height:13px;
+	padding:4px;
+	margin:0;
+	background:url("../imagenes/tab/tab.png") repeat-x;
+}
+.tab .ajax__tab_hover .ajax__tab_outer
+{
+	background:url("../imagenes/tab/tab-hover-right.png") no-repeat right;
+}
+.tab .ajax__tab_hover .ajax__tab_inner
+{
+	background:url("../imagenes/tab/tab-hover-left.png") no-repeat;
+}
+.tab .ajax__tab_hover .ajax__tab_tab 
+{
+	color: #006;
+	background:url("../imagenes/tab/tab-hover.png") repeat-x;
+}
+.tab .ajax__tab_active .ajax__tab_outer 
+{
+	background:url("../imagenes/tab/tab-active-right.png") no-repeat right;
+}
+.tab .ajax__tab_active .ajax__tab_inner 
+{
+	background:url("../imagenes/tab/tab-active-left.png") no-repeat;
+}
+.tab .ajax__tab_active .ajax__tab_tab 
+{
+	color: #006;
+	background:url("../imagenes/tab/tab-active.png") repeat-x;
+}
+.tab .ajax__tab_body 
+{
+	font-family: Arial;
+	font-size:12px;
+	border:1px solid #E0DDD9;
+	border-top:0;
+	padding:8px;
+	background-color:#ffffff;
+}

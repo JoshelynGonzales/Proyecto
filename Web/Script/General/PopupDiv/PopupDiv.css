@@ -1,0 +1,35 @@
+﻿.PDivBackgroundMascara
+{
+	position:absolute;
+	display:none;
+	top:0px;
+	left:0px;
+	background-color: #ECEFF9;
+	filter: alpha(opacity=70);
+	z-Index:1000;
+}
+.PDivContenedor
+{
+	position:absolute;
+	display:block;
+    border: solid 3px #75AFDF;
+    background-color: White;
+    z-Index:1001;
+	/*background:#C9D6E6;
+	color:#000;*/
+}
+.PDivTitulo
+{
+	background-color: #A9DFFC;
+	cursor: move;
+	height: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.PDivPie
+{
+	background-color: #D9ECF8;
+	height: 25px;
+	width: 100%;
+	margin-top: 20px;
+}

@@ -1,0 +1,1378 @@
+﻿@import url(messages.css);
+
+body 
+{
+	background:#FFF url(../images/login/bg-gradient1.gif) repeat-x 0 0;
+	color:#333333;
+	font:normal 62.5% Arial, Helvetica, sans-serif; /* 1em == 10px */
+	margin:0px 0px; 
+	padding:0px;
+	/*text-align:center;*/
+}
+
+.body_1
+{
+	
+	color:#333333;
+	font:normal 72.5% Arial, Helvetica, sans-serif 2em; /* 1em == 10px */
+	margin:0px 0px; 
+	padding:0px;
+	/*text-align:center;*/
+}
+
+
+/*--------------------------------------------------------------------
+INVITATION.CSS
+---------------------------------------------------------------------*/
+
+#panelContainer {
+	height:auto !important;
+	height:84px;
+	min-height:84px;
+}
+
+#intro h3 {
+	font: normal 1.4em/1.4em Arial, Helvetica, sans-serif;
+	color: #333;
+	margin: 0;
+}
+#intro p.expiry {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #999;
+	margin: 15px 0 25px 0;
+}
+#intro p.expiry a {
+	color: #999;
+	font-weight: normal;
+}
+#aboutSarede {
+	color: #666;
+}
+#content > #aboutSarede {
+	margin-bottom: -1px;/* firefox fix */
+}
+#aboutSarede .boxContent {
+	padding: 0 20px;
+}
+#aboutSarede h3 {
+	font: normal 1.4em/1.4em Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#aboutSarede p {
+	font: 1.1em Arial, Helvetica, sans-serif;
+	margin: 20px 0 0 0;
+}
+#boxFooter {
+	margin-bottom: 30px;
+}
+#loginOrSignup {
+	width: 432px;
+	height: 84px;
+	position: relative;
+	padding: 0 31px 21px;
+	background: transparent url(../images/sarede/box-round-blue-footer.gif) no-repeat scroll left bottom;
+}
+#loginOrSignup .footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#loginOrSignup h3 {
+	font: bold 1.1em/1.5em Tahoma, Verdana, sans-serif;
+	color: #666;
+	margin: 5px 0 10px 0;
+	padding: 0;
+}
+#loginselected h3 {
+	font: bold 1.1em/1.5em Tahoma, Verdana, sans-serif;
+	color: #666;
+	margin: 5px 0 10px 0;
+	padding: 0;
+}
+#loginOrSignup div.option {
+	width: 190px;
+	height: 84px;
+	position: absolute;
+	top: 0;
+}
+#loginOrSignup div.login {
+	padding-right: 30px;
+}
+#loginOrSignup div.signup {
+	border-left: 1px solid #cce0ff;
+	padding-left: 35px;
+	left: 247px;
+}
+#loginOrSignup div.option a.button {
+	margin-left: 30px;
+}
+#login {
+	padding: 0 20px;
+}
+#login div {
+	float: left;
+}
+#login a { /* forgotten password? */
+	font: normal 1.1em/2.6em Arial, Helvetica, sans-serif;
+}
+#login .button {
+	float: left;
+}
+#signup {
+	padding: 0 20px 20px;
+	position: relative;
+	background: transparent url(../images/sarede/box-round-blue-footer.gif) no-repeat scroll left bottom;
+}
+#signup div.name {
+	margin-bottom: 15px;
+}
+#signup div.left, #signup div.right {
+	float: left;
+}
+#signup div.left {
+	width: 195px;
+	border-right: 1px solid #cce0ff;
+}
+#signup div.right {
+	width: 230px;
+	padding-left: 30px;
+}
+#signup .checkbox input {
+	float: left;
+	margin-right: 4px;
+	border: 0;
+	padding: 0;
+}
+#signup .button {
+	float: left;
+}
+#signup .right p {
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+	background:transparent url(../images/sarede/hr.gif) repeat-x bottom left;
+	color: #464646;
+	font: 1.1em Arial, Helvetica, sans-serif;
+}
+#signup .right p.last {
+	border-bottom: 0;
+	background: none;
+}
+#signup div.password img {
+	float: right;
+}
+#passwordOk {
+	margin-right: 10px;
+}
+#signup span.required {
+	color: #666;
+	display: block;
+	clear: both;
+	padding-bottom: 5px;
+}
+
+
+
+
+/*--------------------------------------------------------------------
+UNATHENTICATED.CSS
+---------------------------------------------------------------------*/
+
+.noscreen { display: none; }
+
+/* Element definitions */
+a {
+	color: #005e7b;
+	font-weight: bold;
+}
+a:hover {
+	color: #005e7b;
+	text-decoration: none;
+}
+a.cancel {
+	float: left;
+	background: none;
+	width: auto;
+	color: #666;
+	font-weight: normal;
+	vertical-align: middle;
+	padding: 0 10px;
+	font: normal 1.1em/2.6em Arial, Helvetica, sans-serif !important;
+}
+a.cancel em {
+	color: #333;
+	font-style: normal;
+	text-decoration: underline;
+}
+a.cancel:hover {
+	color: #333;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+legend {
+	display: none;
+}
+
+label {
+	font: bold 1.1em/1.5em Arial, Helvetica, sans-serif;
+}
+
+input {
+	border: 1px solid #809db9;
+}
+
+.input_error {
+	border: 1px solid #ff0033;
+}
+input.text {
+	padding: 2px;
+	font: 1.4em Arial, Helvetica, sans-serif;
+}
+input.button {
+    padding: 0 .25em;
+    width: 0;  /* IE table-cell margin fix */
+    overflow: visible;
+}
+
+input.button[class] {  /* IE ignores [class] */
+    width: auto;  /* cancel margin fix for other browsers */
+}
+
+.box {
+	padding: 15px 0 0 0;
+}
+
+.bordered.box {
+	background:transparent url(../images/sarede/box-round-gray-bg.gif) no-repeat 0 0;
+	padding-bottom: 6px; /* img is 9px, 9+6=15 == top padding on box */
+}
+.solid.box {
+	background:transparent url(../images/sarede/box-round-blue-bg.gif) no-repeat 0 0;
+	padding-bottom: 10px
+}
+.datos_1 {
+	background:transparent url(../Imagenes/box-round-blue-bg.gif) no-repeat 0 0;	
+	padding-bottom: 1px
+}
+.datos_2 {
+	/*background:transparent url(../images/sarede/box-round-blue-bg.gif) no-repeat 0 0;*/
+	background:transparent url(../images/sarede/bg-head-alert.png) no-repeat 0 0;
+	padding-bottom: 1px
+}
+
+.button {
+	width: 120px;
+	height: 28px;
+	color: #fff;
+}
+a.button {
+	display: block;
+	border: 0;
+	text-align: center;
+	text-decoration: none;
+	background:transparent url(../images/sarede/btn-green.gif) no-repeat 50% 50%;
+	font: bold 1.1em/2.5em Tahoma, Verdana, sans-serif;
+}
+button.button {
+	font: bold 1.1em Tahoma, Verdana, sans-serif;
+	border: 0;
+	background: transparent url(../images/sarede/btn-green.gif) no-repeat 50% 50%;
+}
+.button:hover {
+	color: #fff;
+}
+.button.green {
+	background:transparent url(../images/sarede/btn-green.gif) no-repeat 50% 50%;
+}
+.button.blue
+{
+	background:transparent url(../images/sarede/btn-blue.gif) no-repeat 50% 50%;
+}
+#wrapper {
+	width: 100%;
+	background: transparent url(../images/sarede/page-bg-body.png) repeat-x top left;
+}
+#header h1 a
+{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#header h2
+{
+	background:none;
+	height:30px;
+	text-indent:-9999px;
+	width:100%;
+	background:transparent url(../images/sarede/text-yourcashflow.gif) no-repeat top center;
+	position:relative;
+	top:0px;
+}
+#content {
+	background:transparent url(../images/sarede/page-gradient.gif) repeat-x 0 0;
+	padding: 30px 200px;
+}
+#content h2 {
+	margin: 0 0 30px 0;
+	padding: 0;
+	font: bold 1.8em Arial, Verdana, sans-serif;
+	color: #333;
+}
+
+
+input.text {
+	margin-bottom: 15px;
+	width: 160px;
+	font:normal 1.1em tahoma;
+	padding:.25em;padding-left:.35em;
+}
+
+label.checkbox {
+	float: left;
+	font-weight: normal;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.checkbox input {
+	margin-bottom: 20px;
+}
+
+span.error {
+	position: absolute;
+	left: -170px;
+	width: 145px;
+	height: 40px;
+	padding: 5px 20px 5px 5px;
+	background:transparent url(../images/sarede/error-bg.gif) no-repeat 0 0;
+	font: bold 1.1em Arial, Helvetica, sans-serif;
+}
+
+table.errors {
+	width:100%;
+	font:normal 1.1em tahoma;
+}
+table.errors tr td p {
+	margin:0px 0px .25em 0px;
+}
+
+.detailedError {
+	font-size: 1.1em;
+}
+/*--------------------------------------------------------------------
+Forgotten Password
+---------------------------------------------------------------------*/
+
+#forgottenPassword, #resetPassword {
+	padding: 0 20px;
+}
+#forgottenPassword input.text {
+	width: 195px;
+	margin-bottom: 15px;
+}
+#forgottenPassword input#UserName {
+	width: 280px;
+	margin-bottom: 20px;
+}
+
+#forgottenPassword label {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#forgottenPassword .button {
+	float: left;
+	margin-right: 10px;
+}
+
+button.cancel {
+	background: transparent url(../images/sarede/btn-gray.gif) no-repeat 50% 50%;
+	cursor:pointer;
+}
+
+#content h2 {
+	margin: 0 0 10px 0;
+}
+
+.info {
+	margin: 0 0 20px 0;
+}
+.info p {
+	font: 1.1em/1.5em Arial;
+	margin: 0;
+}
+
+#sent {
+	font-size: 1.1em;
+}
+
+#resetPassword {
+	position: relative;
+}
+#resetPassword .tip {
+	float: right;
+	width: 215px;
+	font-size: 1.1em;
+}
+#resetPassword .tip p {
+	margin:0 0 1em 0;
+}
+#resetPassword #fields {
+	float: left;
+}
+#resetPassword label {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 2px;
+}
+#resetPassword input {
+	float: left;
+	clear: both;
+	margin-bottom: 15px;
+	width: 200px;
+}
+#resetPassword button.button {
+	float: left;
+	clear: both;
+	margin-top: 5px;
+}
+
+
+
+/*--------------------------------------------------------------------
+LOGIN.CSS
+---------------------------------------------------------------------*/
+
+
+#login {
+	padding: 0 20px 20px 20px;
+	background:transparent url(../images/sarede/box-round-blue-footer.gif) no-repeat bottom left;
+}
+.solid.box {
+	padding-bottom: 0;	
+}
+#login div {
+	float: left;
+}
+#login div.left {
+	width: 235px;
+}
+#login div.right {
+	width: 45%;
+}
+#login input.text {
+	width: 195px;
+	margin-bottom: 15px;
+}
+#login input#email {
+	width: 225px;
+}
+#login a { /* forgotten password? */
+	font: normal 1.1em Arial, Helvetica, sans-serif;
+}
+#login label {
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+p#signup {
+	color: #666;
+	margin: 20px 0 0 15px;
+	font-size: 1.1em;
+}
+
+
+#aboutSarede {
+	color: #666;
+	margin-top: 50px;
+}
+#aboutSarede .boxContent {
+	padding: 0;
+}
+#aboutSarede h3 {
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+	background:transparent url(../images/login/title-hero.gif) no-repeat 0 0;
+	height: 45px;
+}
+#aboutSarede p {
+	font-size: 1.2em;
+	margin: 15px 0 5px 0;
+}
+
+div.newAccount
+{
+	text-align:center;
+}
+div.newAccount p
+{
+	color:#666;
+	font:bold 1em tahoma,arial,sans-serif;
+	margin-top:1em;
+}
+
+div.informePrecio
+{
+	text-align:left;
+}
+div.informePrecio p
+{
+	color:#666;
+	font:bold 1em tahoma,arial,sans-serif;
+	margin-top:1em;
+}
+
+
+/* browserRequirements */
+#browserRequirements {
+	background:transparent url(../images/login/browser-detection/bg-head-alert.png) no-repeat top left;
+	padding: 5px 0 0 0;
+	margin: 0 0 30px 0;
+	font: 1em arial, helvetica, sans-serif;	
+}
+#browserRequirements h3, #browserRequirements h4, #browserRequirements p, #browserRequirements ul {
+	position: relative;
+}
+#browserRequirements .boxContent {
+	background:transparent url(../images/login/browser-detection/bg-alert.png) no-repeat bottom left;
+	padding: 15px 20px 20px 20px;
+}
+#browserRequirements h3 {
+	font: bold 2.4em Arial, Helvetica, sans-serif;
+	color: #f27800;
+	margin: 0;
+}
+#browserRequirements p {
+	font: normal 1.2em/1.6em Arial, helvetica, sans-serif;	
+	margin: 10px 0;
+}
+#browserRequirements h4 {
+	font: bold 1.4em Arial, Helvetica, sans-serif;
+	color: #333;
+	margin: 20px 0 0 0;
+}
+
+#browserRequirements ul {
+	position: relative;
+	list-style-type: none;
+	/**
+	float: left;
+	**/
+	margin: 10px 0;
+	padding: 0;
+}
+
+#browserRequirements ul li {
+	margin: 0 0 10px 0;
+}
+#browserRequirements ul a {
+	font: normal 1.1em tahoma, arial, helvetica, sans-serif;
+	text-decoration: none;
+}
+#browserRequirements ul span {
+	font: normal 1.1em tahoma, arial, helvetica, sans-serif;
+	text-decoration: none;
+}
+#browserRequirements ul img {
+	float: left;
+	border: 0;
+	margin: 0 10px 0 0;	
+}
+#browserRequirements ul li strong {
+	font: bold 1.27em/1.6em arial, helvetica, sans-serif;
+	color: #333;
+}
+#browserRequirements ol {
+	list-style-type: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+#browserRequirements ol li {
+	padding: 5px 5px 5px 45px;	
+}
+#browserRequirements li.one {
+	background:transparent url(../images/login/browser-detection/bullet-one.gif) no-repeat 0 50%;
+	margin: 0 0 10px 0;
+}
+#browserRequirements li.two {
+	background:transparent url(../images/login/browser-detection/bullet-two.gif) no-repeat 0 50%;
+}
+a.orangeBold {
+	font:bold 1.2em arial, sans-serif;
+	color:#d36100;
+	text-decoration:none;
+}
+a:hover.orangeBold {
+	text-decoration:underline;
+}
+p.detectionAdobe
+{
+	width:245px;
+}
+.getFlash
+{
+	position:relative;
+	top:3em;
+}
+img.welcome
+{
+	margin-bottom:2em;
+}
+div.whiteBG
+{
+	width:100%;
+	background:#FFFFFF url(../images/login/bg-gradient.gif) repeat-x 0 0;
+}
+comun
+{
+	width:100%;
+	background:#FFFFFF url(../images/login/bg-gradient2.gif) repeat-x 0 0;
+	height:50px
+}
+
+#MainContentCenter 
+{
+	margin:0px auto;
+	text-align:left;
+	width:980px;
+}
+#header 
+{
+	background:transparent url(../images/login/bg-petals1.gif) no-repeat top center;
+	height:146px;
+	text-align:left;
+	width:965px;
+}
+#header h1
+{
+	background: url(../images/sarede/sarede_logo.png) no-repeat 0 3px;
+	width: 300px;
+	height: 90px;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	text-indent:-1000em;
+	z-index:2;
+	left:30px;
+	top:0px;
+}
+#header h1 a
+{
+	display:block;
+	height:100%;
+	width:100%;
+}
+#header h2
+{
+	background: transparent url(../images/login/text-yourcashflow.gif) no-repeat top center;
+	height:50px;
+	margin:0px;
+	margin-top:20px;
+	padding:0px;
+	text-indent:-1000em;
+}
+#content
+{
+	text-align:left;
+	background-color:#FFF;
+}
+#footer 
+{
+    background: transparent url(../images/login/background-footer.gif) repeat-x top left;
+    font-size: 1.1em;
+    padding: 0px 0 20px 0;
+    clear:both;
+}
+div#footer div.inner
+{
+	padding-top:15px;
+}
+#footer a.b,
+#aboutSarede a.b, 
+#panelContainer a.b
+{
+    font-weight: bold;
+}
+#footer ul {
+    list-style-type: none;
+}
+#footer li {
+    float: left;
+    border-right: 1px solid #ccc;
+    padding: 2px 6px;
+}
+#footer li.last {
+    border-right: none;
+}
+div#sent p,
+div.info p
+{
+	font:normal 12px/150% Arial, sans-serif;
+}
+div#sent p a
+{
+	font:normal 12px Arial, sans-serif;
+}
+
+
+
+div.inner
+{
+	margin: 0px auto;
+	padding: 0px 0px;
+	text-align:left;
+	width:930px;
+}
+ul.right
+{
+	list-style-type:none;
+	float:right;
+}
+ul.left
+{
+	float:left;
+	list-style-type:none;
+	margin-left:0px;
+	padding:0px;
+}
+img.p
+{
+	margin-bottom:1em;
+}
+a:link.bluel,
+a:visited.bluel,
+a:active.bluel,
+a:hover.bluel
+{
+    font-weight: normal;
+    color:#0089B3;
+    text-decoration:none;
+    font-family: Tahoma, Arial, Verdana, sans-serif;
+}
+a:hover.bluel
+{
+    text-decoration:underline;
+}
+button
+{
+	cursor:pointer;
+}
+
+
+/*to correct the error message width*/
+div.errorMessages {
+	font-size: 1.1em;
+	width: 497px;
+}
+
+div.ErrorContent
+{
+	float:left;
+	width:49.5em;
+}
+div.ErrorPadL
+{
+	width:1em;
+	float:left;
+}
+div.ErrorL
+{
+	color:#626262;
+	font:bold 11px/14px Tahoma, Arial, Helvetica, sans-serif;
+	width:39em;
+	float:right;
+	padding:1.5em 0em 1em 0em;
+}
+div.ErrorL p 
+{
+	margin:0;
+	margin-bottom:.5em;
+	line-height:140%;
+	width:38em;
+}
+div.ErrorR
+{
+	float:left;
+	width:1em;
+}
+div.ErrorBottom
+{
+	clear:both;
+	height:14px;
+	margin-bottom:1em;
+	width:49.5em;
+}
+div.ErrorBottomShading
+{
+	float:left;
+	height:14px;
+	width:22em;
+}
+div.ErrorBottomShadingR
+{
+	float:right;
+	width:2em;
+	height:14px;
+	line-height:130%;
+}
+
+div.or
+{
+	float:left;
+	width:5px;
+	font:normal 11px tahoma, sans-serif;
+	padding-left:5px;
+	padding-top:7px;
+}
+div.orcancel
+{
+	float:left;
+}
+
+/*addition of logo and two-lined menu*/
+div.partnerLogo
+{
+	float:right;
+	padding-right:10px;
+}
+div.footerMenu
+{
+	float:left;
+	width:640px;
+}
+div.footerMenu ul
+{
+	margin-top:0px;
+	margin-bottom:0px;
+	clear:both;
+	width:100%;
+}
+
+
+
+/* header for sign up page, to match the marketing website's header */
+/* Header menu
+-----------------------------------------------------------------------------------------*/
+#header-signup {
+}
+#header-signup div.inner {
+	height: 43px;
+	margin-top:24px;
+	position: relative;
+	width:910px;
+}
+#header-signup h1 a {
+	background: url(../images/sarede/sarede_logo.jpg) no-repeat 0 3px;
+	width: 150px;
+	height: 80px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+#header-signup ul {
+	list-style-type: none;
+}
+#header-signup li {
+	float: left;
+	background: url(../images/sarede/sep.gif) no-repeat top right;
+	padding: 0 5px;
+}
+#header-signup li a {
+	display: block;
+	padding: 0 15px;
+	height: 43px;
+}
+#header-signup li a:hover {
+	color: #eff;
+}
+#header-signup li a span {
+	width: 100%;
+}
+#header-signup li.findAnExpert a {
+	width: 118px;
+}
+#header-signup li.whatIsXero a {
+	width: 117px;
+}
+#header-signup li.signUp a {
+	width: 63px;
+}
+#header-signup li.aboutUs a {
+	width: 77px;
+}
+#header-signup li.companyInfo a {
+	width: 122px;
+}
+#header-signup li.blog {
+	background: none; /* remove sep */
+}
+#header-signup li.blog a {
+	width: 40px;
+}
+#header-signup li.login 
+{
+	float: right;
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+#header-signup li.login a {
+	padding: 0;
+	background: url(../images/login/btn-login.gif) no-repeat 0 0;
+	width: 115px;
+	height: 43px;
+}
+
+/* Link images */
+li.whatIsXero a {
+	background:url(../images/sarede/title-what-is-xero.gif) no-repeat 0 0; 
+}
+li.blog a {
+	background:url(../images/sarede/title-blog.gif) no-repeat 0 0; 
+}
+li.aboutUs a {
+	background:url(../images/sarede/title-about-us.gif) no-repeat 0 0; 
+}
+li.companyInfo a {
+	background:url(../images/sarede/title-company-info.gif) no-repeat 0 0; 
+}
+li.signUp a {
+	background:url(../images/sarede/title-sign-up.gif) no-repeat 0 0; 
+}
+li.findAnExpert a
+{
+	background:url(../images/sarede/title-find-an-expert.gif) no-repeat 0 0;
+}
+li.whatIsXero a:hover,
+li.findAnExpert a:hover,
+li.signUp a:hover,
+li.aboutUs a:hover,
+li.companyInfo a:hover,
+li.blog a:hover {
+	background-position: 0 -43px;
+}
+
+/*signup form*/
+div.signupPage
+{
+	padding:0px;
+	width:100%;
+	text-align:center;
+	margin:0px auto;
+	float:left;
+	padding-bottom:5em;
+	margin-top:95px;
+}
+div.signupPage div.aligncenter
+{
+	width:910px;
+	margin:0px auto;
+}
+div.signup
+{
+	float:left;
+	width:460px;
+	text-align:left;
+}
+div.signup h1 
+{
+	padding:0px !important;
+	margin:0px !important;
+	height:65px;
+}
+div.signup div.box
+{
+	float:left;
+	width:450px;
+	background-color:#edf4fa;
+	font:normal 11px arial, sans-serif;
+	padding:0px;
+	overflow:hidden;
+}
+div.signup div.box div.shadow
+{
+	width:100%;
+	float:left;
+	clear:both;
+	width:450px;
+	height:8px;
+	background:#edf4fa url(../images/sarede/shadow-form.gif) no-repeat top left;
+	overflow:hidden;
+}
+
+div.choice
+{
+	float:left;
+	clear:both;
+	width:450px;
+	height:98px;
+	background:#edf4fa url(../images/sarede/background-demo.gif) no-repeat top left;
+	overflow:hidden;
+}
+div.demoblank
+{
+	background:#edf4fa url(../images/sarede/background-demo-blank.gif) no-repeat top left;
+	height:65px !important;
+}
+div.choice div
+{
+	float:left;
+	width:315px;
+	float:right;
+}    
+html>/**/body div.choice div
+{
+	width:310px;
+}    
+html>/**/body div.choice div
+{
+	margin-left:140px;
+}    
+
+div.choice div fieldset,
+div.choice div span
+{
+	margin-top:17px;
+	margin-bottom:5px;
+	padding:0px;
+	float:left;
+}    
+div.choice div span
+{
+	width:280px;
+	font:normal 12px Arial, sans-serif;
+}  
+div.choice div fieldset legend
+{
+	display:block;
+}            
+div.choice div input
+{
+	float:left;
+	clear:left;
+	margin-right:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	border:none;
+}
+div.choice div label
+{
+	float:left;
+	font-weight:normal;
+	margin-bottom:5px;
+	margin-top:2px;
+	width:250px;
+}
+
+
+div.form
+{
+	width:100%;
+	float:left;
+	clear:both;
+	width:450px;
+	background:#edf4fa url(../images/sarede/background-form.gif) repeat-y top left;
+}
+div.form fieldset,
+div.form div.game
+{
+	width:410px;
+	background:#edf4fa url(../images/sarede/background-table.gif) repeat-x top left;
+	margin-left:20px;
+	padding-top:10px;
+}
+div.form fieldset table 
+{
+	width:410px;
+}
+
+table.tictactoe tr td.br
+{
+	border:solid 1px #d5e3ec;
+	border-width:0px 4px 4px 0px;
+}
+table.tictactoe tr td.nb
+{
+	border-bottom:none;
+}
+table.tictactoe tr td.nr
+{
+	border-right:none;
+}
+table.tictactoe
+{
+	border:solid 4px #c6dce7;
+	margin-top:15px;
+	margin-bottom:30px;
+	background-color:White;
+}
+table tr td p
+{
+	font:normal 12px/18px Arial, sans-serif !important;
+}
+div.form fieldset table label
+{
+	font-weight:normal;
+	width:109px;
+	float:right;
+	text-align:right;
+}
+div.form fieldset table label.tc
+{
+	font-weight:normal;
+	float:right;
+	width:auto;
+	margin:9px 0px 7px 0px;
+	width:260px;
+	text-align: left;
+	padding: 0 0 0 5px;
+}
+html>/**/ body div.form fieldset table label.tc
+{
+	margin:5px 0px 7px 0px;
+}
+div.form fieldset table tr td
+{
+	vertical-align:middle;
+}
+div.form fieldset table tr td input
+{
+	width:210px;
+	font:normal 11px Tahoma, sans-serif;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:3px;
+}
+div.form fieldset table tr td input.tc
+{
+	border:none;
+	width:16px;
+	float:left;
+	margin:7px 0px 7px 0px;
+}
+div.form fieldset table tr td.note
+{
+	color:#78797b;
+	font:normal 10px Tahoma, sans-serif;
+	padding-right:0px;
+	padding-left:4px;
+}
+div.form fieldset table tr td.note span
+{
+	border-left:solid 1px #d7dce2;
+	padding-top:6px;
+	padding-left:9px;
+	float:left;
+	display:block;
+	height:35px;
+}
+div.form fieldset table tr td button
+{
+	background:#edf4fa url(../images/sarede/btn-signup.gif) no-repeat top left;
+	border:none;
+	height:36px;
+	width:138px;
+	margin-bottom:20px;
+}
+div.form div.game table tr td button
+{
+	background:#edf4fa url(../images/sarede/btn-verify.gif) no-repeat top left;
+	border:none;
+	height:36px;
+	width:138px;
+	margin-bottom:20px;
+}
+div.form fieldset table tr td button span,
+div.form div.game table tr td button span
+{
+	visibility:hidden;
+}
+select.signup
+{
+	width:215px;
+	font:normal 11px tahoma, sans-serif;
+}
+div.marketing
+{
+	float:right;
+	text-align:left;
+	width:435px;
+	margin-top:75px;
+}
+div.marketing p
+{
+	font:normal 12px/150% Arial, sans-serif;
+	width:200px;
+}
+div.marketing table
+{
+	font:normal 12px/150% Arial, sans-serif;
+	width:200px;
+}
+div.marketing table tr,
+div.marketing table tr td
+{
+	vertical-align:middle;
+}
+div.marketing h2
+{
+	margin:0px;
+	padding:0px;
+	height:30px;
+}
+div.marketing h2.larger
+{
+	position:relative;
+	top:-5px;
+}
+div.marketing ul
+{
+	font:normal 12px Arial, sans-serif;
+	list-style-image:url(../images/sarede/checkmark.gif);
+	margin:0px;
+	padding:0px;
+	margin-left:16px;
+}
+html>/**/body div.marketing ul
+{
+	margin-left:23px;
+}
+div.marketing ul li
+{
+	line-height:1;
+	margin-bottom:9px;
+}
+html>/**/body div.marketing ul li
+{
+	line-height:1;
+	margin-bottom:6px;
+}
+div.marketing ul li span,
+div.marketing ul li strong
+{
+	margin-left:7px;
+}
+html>/**/body div.marketing ul li span,
+html>/**/body div.marketing ul li strong
+{
+	margin-left:0px;
+}
+div.marketing span.caveat
+{
+	color:Gray;
+	font:normal 11px Tahoma, snas-serif;
+	display:block;
+	background:transparent url(../images/sarede/background-table.gif) repeat-x bottom left;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
+div.demoblank div
+{
+	float:left !important;
+	margin-left:30px !important;
+	width:500px !important;
+}
+div.newAccount
+{
+	text-align:left;
+}
+
+div.newAccount p
+{
+	font:normal 11px Tahoma, sans-serif;
+	color:Black;
+}
+
+
+/* Location footer on the signup page */
+div.location
+{
+	font:normal 12px/16px arial, sans-serif;
+	color:#5a5a5a;
+	margin-top:20px;
+	height:114px;
+	background:transparent url(../images/login/background-location.gif) repeat-x top left;
+	width:100%;
+	text-align:left;
+	float:left;
+	clear:both;
+}
+div.location div.now
+{
+	width:420px;
+	float:left;
+	margin-top:20px;
+	padding-left:20px;
+}
+div.location div.now div p 
+{
+	padding-top:3px;
+	margin-top:0px;
+}
+div.location div.where-to
+{
+	width:385px;
+	position:relative;
+	left:-52px;
+	float:right;
+	background:transparent url(../images/login/background-world.gif) no-repeat top right;
+	margin-top:20px;
+}
+div.location div.where-to div
+{
+	padding-right:65px;
+}
+div.location div.where-to div p
+{
+	padding-top:3px;
+	margin-top:0px;
+}
+div.shadow-location
+{
+	height:3px;
+	background:transparent url(../images/login/shadow-location.gif) repeat-x top left;
+	width:100%;
+	text-align:left;
+	float:left;
+	clear:both;
+}
+div.no-background p
+{
+	font:normal 12px/150% Arial, sans-serif;
+}
+div.no-background
+{
+	background-image:none !important;
+	background-color:transparent !important;
+}
+div.no-border
+{
+	border:none !important;
+}
+div.no-padding
+{
+	padding:0px !important;
+}
+div.float-left
+{
+	float:left;
+}
+div.or
+{
+	padding:5px 10px 0px 10px;
+	font:normal 12px Arial, sans-serif;
+}

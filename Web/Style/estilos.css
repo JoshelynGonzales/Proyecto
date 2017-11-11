@@ -1,0 +1,139 @@
+#header {
+	width:1024px;
+	height:108px;	
+	background-image:url(../Pictures/header.jpg);
+}
+
+#logo{
+	background-image:url(../Pictures/logo.jpg);
+	background-repeat:no-repeat;
+	width:1024px;
+	height:108px;		
+}
+
+#nav {
+	width:1024px;
+	height:30px;
+	background-image:url(../Pictures/nav.jpg);
+	line-height:30px;
+	font-family:Arial;
+	color:#FFF;
+	font-size:12px;
+	text-align:right;
+}
+#left {
+	width:160px;
+	height:530px;
+	background-color:#CCCCCC;
+	border-width:1px;
+	border-style:solid;
+	border-color:#333333;
+}
+#rigth {
+	width:861px;
+	height:530px;
+	border-left-width:0;
+	border-top-width:1px;
+ 	border-right-width:1px;
+ 	border-bottom-width:1px;
+	border-style:solid;
+	border-color:#333333;	 
+}
+#footer {
+	width:1024px;
+	height:31px;
+	line-height:31px;
+	background-image:url(../Pictures/footer.jpg);
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:11px;
+}
+.item {
+	width:160px;
+	height:40px;
+	background-color:#B9B9B9;
+	border-left-width:0;
+	border-top-width:0;
+ 	border-right-width:0;
+ 	border-bottom-width:1px;
+	border-style:solid;
+	border-color:#333333;
+}
+.item_sel {
+	width:161px;
+	height:40px;
+	background-color:#FFF;
+	border-left-width:0;
+	border-top-width:0;
+ 	border-right-width:0;
+ 	border-bottom-width:1px;
+	border-style:solid;
+	border-color:#333333;
+}
+.item, .item_sel {
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:12px;
+	cursor:pointer;
+}
+h3{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:14px;
+	text-align:left;
+}
+hr{
+	width:95%;
+}
+.item_menu{
+	width:140px;
+	height:40px;
+	background-color:#FFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#333333;
+	float:left;
+	margin-left:50px;
+	margin-top:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-align:center;
+	padding-top:80px;
+}
+
+.item_menu a, .item_menu a:visited, .item_menu a:link{
+	color:#666;
+	text-decoration:none;
+}
+
+#center {
+	width:1022px;
+	height:530px;
+ 	border-width:1px;
+	border-style:solid;
+	border-color:#333333;	 
+}
+#login{
+	width:250px;
+	height:110px;
+	background-color:#CCCCCC;
+	border-width:1px;
+	border-style:solid;
+	border-color:#666;
+	text-align:center;
+	padding-top:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:13px;
+	margin-left:387px;
+	margin-top:150px;
+}
+
+#login input{
+	border-style:solid;
+	border-width:1px;
+	border-color:#333;
+}

@@ -1,0 +1,225 @@
+﻿*
+{
+	font-family: Verdana, Arial, Courier;
+	color: #000000;
+	font-size: 10px;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	background-image: url(../imagenes/diseno/fondo.gif);
+}
+
+h1
+{
+	font-size: 14px;
+	/*background-color: #0069C3;*/
+	background-image: url(../imagenes/fondo_h1.gif);
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	padding: 3px;
+	text-align: center;
+}
+
+div.BotonPanel
+{
+	margin: 5px;
+	width: 320px;
+	background-color: #EFEFEF;
+	text-align: left;
+}
+
+div.BotonPanel:hover,
+div.BotonPanelHover
+{
+	background-color: #DAE3FE;
+	/*background-color: #BFD5D5;*/
+	/*cursor: pointer;
+	cursor: hand;*/
+}
+
+div.BotonPanel div.Top
+{
+	padding-top: 22px;
+	background-image: none;
+	background-image: url(../Imagenes/diseno/botonmenutop.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+div.BotonPanel:hover div.Top,
+div.BotonPanelHover div.Top
+{
+	background-image: url(../Imagenes/diseno/botonmenutop_on.gif);
+}
+
+div.BotonPanel div.Bottom
+{
+	padding-bottom: 10px;
+	background-image: none;
+	/*background-image: url(../Imagenes/diseno/botonmenubottom.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;*/
+	border-left: solid 1px #CCCCCC;
+	border-right: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+div.BotonPanel:hover div.Bottom,
+div.BotonPanelHover div.Bottom
+{
+	/*background-image: url(../Imagenes/diseno/botonmenubottom_on.gif);*/
+}
+
+div.BotonPanel div.Middle
+{
+	padding: 10px;
+	/*border-left: solid 1px #CCCCCC;
+	border-right: solid 1px #CCCCCC;*/
+	height: 130px;
+}
+
+div.BotonPanel:hover div.Middle,
+div.BotonPanelHover div.Middle
+{
+	/*border-left: solid 1px #CCCCCC;
+	border-right: solid 1px #CCCCCC;*/
+}
+
+div.BotonPanel h2
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: -28px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+div.BotonPanel:hover h2,
+div.BotonPanelHover h2
+{
+	color: #FFFFFF;
+	border-bottom: solid 0px #FFFFFF;
+}
+
+div.BotonPanel img
+{
+	float: left;
+	display: inline;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+div.Encabezado
+{
+	background-image: url(../Imagenes/diseno/logo.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	/*border-bottom: solid 1px #EFEFEF;*/
+	height: 110px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+div.Encabezado div.LoginStatus
+{
+	margin: 10px;
+	float: right;
+}
+
+div.Cuerpo
+{
+	margin: 0px auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div.Cuerpo div.Contenido
+{
+	text-align: left;
+}
+
+div.Cuerpo table
+{
+	margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+input
+{
+	font-family: Verdana, Times New Roman, Arial;
+	font-size: 11px;
+	color: #000000;
+	margin: 1px;
+}
+
+input.textbox
+{
+	border: solid 1px #000000;
+	background-color: #FFFFFF;
+}
+
+input.button
+{
+	color: #FFFFFF;
+	border: solid 1px #000000;
+	background-color: #0069C3;
+	width: 100px;
+}
+
+
+
+
+
+
+table.GridView
+{
+	border: solid 1px #F7F7F7;
+	border-collapse: collapse;
+}
+
+table.GridView tr th
+{
+	background-color: #B5C7DE;
+	color: #456AB5;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 20px;
+	border-right: solid 1px #F7F7F7;
+	border-bottom: solid 1px #F7F7F7;
+}
+
+table.GridView tr td
+{
+	background-color: #FFFFFF;
+	color: #456AB5;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 20px;
+	border-right: solid 1px #F7F7F7;
+}
+
+table.GridView tr td span
+{
+	color: #456AB5;
+}
+
+table.GridView tr.alternativo td
+{
+	background-color: #F7F7F7;
+}

@@ -1,0 +1,137 @@
+﻿<%@ Register assembly="DevExpress.Web.ASPxGridView.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+namespace="DevExpress.Web.ASPxGridView" tagprefix="dxwgv" %>
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+namespace="DevExpress.Web.ASPxEditors" tagprefix="dxe" %>
+<%--
+
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:ImageButton skinid="icoModificar" runat="server" ImageUrl="~/Imagenes/Iconos/IcoModificar.gif" ToolTip="Modificar"  AlternateText="Modificar"/>
+<asp:ImageButton skinid="icoEliminar" runat="server" ImageUrl="~/Imagenes/Iconos/IcoEliminar.gif" ToolTip="Eliminar"  AlternateText="Eliminar"/>
+
+<dxe:ASPxButton runat="server" 
+   Font-Names="Trebuchet MS" Font-Size="11px" Height="30px" Width="100px">
+  </dxe:ASPxButton>
+
+         <dxwgv:ASPxGridView SettingsPager-PageSize = "20" 
+                 runat="server" AutoGenerateColumns="False"
+          CssFilePath="~/App_Themes/PlasticBlue/{0}/styles.css" 
+                    CssPostfix="PlasticBlue"
+          Font-Size="11px">
+          
+        <Styles CssFilePath="~/App_Themes/PlasticBlue/{0}/styles.css" CssPostfix="PlasticBlue">
+                    </Styles>
+          <SettingsLoadingPanel Text="Espere por favor&amp;hellip;" />
+          <SettingsPager>
+                        <AllButton>
+                            <Image Height="19px" Width="27px" />
+                        </AllButton>
+                        <FirstPageButton Text="Inicio">
+                            <Image Height="19px" Width="23px" />
+                        </FirstPageButton>
+                        <LastPageButton Text="Final">
+                            <Image Height="19px" Width="23px" />
+                        </LastPageButton>
+                        <NextPageButton Text="Siguiente">
+                            <Image Height="19px" Width="19px" />
+                        </NextPageButton>
+                        <PrevPageButton Text="Anterior">
+                            <Image Height="19px" Width="19px" />
+                        </PrevPageButton>
+                        <Summary AllPagesText="Paginas: {0} - {1} ({2} elementos)" Text="Pagina {0} de {1} ({2} elementos)"
+                            Visible="True" />
+                    </SettingsPager> 
+        
+          <SettingsText EmptyDataRow="Lo sentimos, el criterio de busqueda no obtuvo resultados."/>
+
+        <Images ImageFolder="~/App_Themes/PlasticBlue/{0}/">
+                        <CollapsedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvCollapsedButton.png" Width="15px" />
+                        <ExpandedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvExpandedButton.png" Width="15px" />
+                        <DetailCollapsedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvDetailCollapsedButton.png" Width="15px" />
+                        <DetailExpandedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvDetailExpandedButton.png" Width="15px" />
+                        <HeaderFilter Height="19px" Url="~/App_Themes/PlasticBlue/GridView/gvHeaderFilter.png" 
+                            Width="19px" />
+                        <HeaderActiveFilter Height="19px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvHeaderFilterActive.png" Width="19px" />
+                        <HeaderSortDown Height="5px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvHeaderSortDown.png" Width="7px" />
+                        <HeaderSortUp Height="5px" Url="~/App_Themes/PlasticBlue/GridView/gvHeaderSortUp.png" 
+                            Width="7px" />
+                        <FilterRowButton Height="13px" Width="13px" />
+                        <WindowResizer Height="13px" Url="~/App_Themes/PlasticBlue/GridView/WindowResizer.png" 
+                            Width="13px" />
+                    </Images>
+        </dxwgv:ASPxGridView>  
+
+
+         <dxwgv:ASPxGridView SkinId="skingv" runat="server" AutoGenerateColumns="False"
+          CssFilePath="~/App_Themes/PlasticBlue/{0}/styles.css" 
+                    CssPostfix="PlasticBlue" SettingsPager-PageSize = "20"
+          Font-Size="11px">
+          
+        <Styles CssFilePath="~/App_Themes/PlasticBlue/{0}/styles.css" CssPostfix="PlasticBlue">
+                    </Styles>
+          <SettingsLoadingPanel Text="Espere por favor&amp;hellip;" />
+          <SettingsPager>
+                        <AllButton>
+                            <Image Height="19px" Width="27px" />
+                        </AllButton>
+                        <FirstPageButton Text="Inicio">
+                            <Image Height="19px" Width="23px" />
+                        </FirstPageButton>
+                        <LastPageButton Text="Final">
+                            <Image Height="19px" Width="23px" />
+                        </LastPageButton>
+                        <NextPageButton Text="Siguiente">
+                            <Image Height="19px" Width="19px" />
+                        </NextPageButton>
+                        <PrevPageButton Text="Anterior">
+                            <Image Height="19px" Width="19px" />
+                        </PrevPageButton>
+                        <Summary AllPagesText="Paginas: {0} - {1} ({2} elementos)" Text="Pagina {0} de {1} ({2} elementos)"
+                            Visible="True" />
+                    </SettingsPager> 
+        
+          <SettingsText EmptyDataRow="Lo sentimos, el criterio de busqueda no obtuvo resultados." 
+                        GroupContinuedOnNextPage="Contin&amp;#250;a en la p&amp;#225;gina siguiente" 
+                        GroupPanel="Arrastrar un encabezado de la columna aqu&amp;#237;, para agrupar por esa columna." />
+          <Settings ShowFilterRow="True" ShowGroupPanel="True" />
+
+        <Images ImageFolder="~/App_Themes/PlasticBlue/{0}/">
+                        <CollapsedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvCollapsedButton.png" Width="15px" />
+                        <ExpandedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvExpandedButton.png" Width="15px" />
+                        <DetailCollapsedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvDetailCollapsedButton.png" Width="15px" />
+                        <DetailExpandedButton Height="15px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvDetailExpandedButton.png" Width="15px" />
+                        <HeaderFilter Height="19px" Url="~/App_Themes/PlasticBlue/GridView/gvHeaderFilter.png" 
+                            Width="19px" />
+                        <HeaderActiveFilter Height="19px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvHeaderFilterActive.png" Width="19px" />
+                        <HeaderSortDown Height="5px" 
+                            Url="~/App_Themes/PlasticBlue/GridView/gvHeaderSortDown.png" Width="7px" />
+                        <HeaderSortUp Height="5px" Url="~/App_Themes/PlasticBlue/GridView/gvHeaderSortUp.png" 
+                            Width="7px" />
+                        <FilterRowButton Height="13px" Width="13px" />
+                        <WindowResizer Height="13px" Url="~/App_Themes/PlasticBlue/GridView/WindowResizer.png" 
+                            Width="13px" />
+                    </Images>
+        </dxwgv:ASPxGridView>  
